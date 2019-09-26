@@ -12,6 +12,10 @@
         <action
             android:id="@+id/action_page2"
             app:destination="@id/page2Fragment" />
+
+        <action
+            android:id="@+id/action_page4"
+            app:destination="@id/page4Fragment"/>
     </fragment>
 
     <fragment
@@ -36,5 +40,15 @@
             android:label="fragment_page3"
             tools:layout="@layout/fragment_main_page3" />
     </navigation>
+
+    <fragment
+        android:id="@+id/page4Fragment"
+        android:name="com.yqy.jetpack2.navigation.MainPage4Fragment"
+        android:label="fragment_page4"
+        tools:layout="@layout/fragment_main_page4" >
+        <action
+            android:id="@+id/action_page1"
+            app:destination="@id/page1Fragment"/>
+    </fragment>
 
 </navigation>
